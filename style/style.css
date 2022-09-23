@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Portafolio y Tienda */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EBEBEB;
+}
+
+
+
+header{
+    display: grid;
+    font-size: large;
+    border-bottom: solid red;
+    margin-bottom: 37px;
+}
+
+.home-container{
+    display: flex;
+    background-image: url(../img/F4.jpg);
+    height: 218px;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: top center;
+    background-size:cover ;
+    position: relative
+}
+
+
+.navbar-brand{
+    color: #1f1f1f7a ;
+    text-decoration: none;
+    font-size: 27px ;
+    letter-spacing: 1px ;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul main{
+    text-decoration: none;
+    background-color: #EBEBEB;
+}
+
+footer{
+    padding: 3em;
+    background-color: gray;
+    margin-left: 0px;
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid red;
+}
+
+a{
+    color: #1f1f1f ;
+    text-decoration: none;
+    font-size: 29px ;
+    letter-spacing: 1px ;
+    font-family: "Wire One","Helvetica",arial,sans-serif;
+    text-align: right;
+    font-weight:400;
+}
+
+h1{
+    color: black;
+    margin-left: 7%;
+    margin-right: 10%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+h2{
+    font-family: 'lato', sans-serif ;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: .04em;
+    font-size: 18px;
+    color: #22272b9f;
+    margin-top: 0;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+h3{
+    font-family: proxima-nova ;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: .04em;
+    font-size: 12px;
+    color: #7e8891;
+    margin-top: 0;
+    text-align: left;
+}
+h4{
+    margin-left: 7%;
+    margin-right: 10%;
+    font-size: medium;
+    color: #7e8891;
+}
+h5{
+    margin-left: 7%;
+    margin-right: 10%;
+    font-size: small;
+    color: #7e8891;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: grey;
+    padding: 4px;
+    margin: 0px 0px 33px 45px;
+    font-family: 'Lato', sans-serif;
+
+}
+.segundoParrafo{
+    margin-top: -52px;
+    font-family: italic; 
+}
+
+.icono{
+    width: 75px;
+    height: 75px;
+}
+
+.whitesmoke{
+    color: whitesmoke;
+}
+
+
+/* Acerca de */
+
+.acercade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgacercade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+/* contacto */
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin-right: 31%;
+    margin-left: 1%;
+    width: 260px;
+}
+input{
+    border-radius: 2%;
+}
+
+.bottom{
+    width: 170px;
+}
+textarea{
+    width: 290px;
+}
+
+
+
+
+/* Grillas */
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: contenido;
+}
+footer{
+    grid-area: footer;
+}
+
+
+/* Portafolio */
+
+.galeria{
+    margin: 0%;
+    background-color: #EBEBEB;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "galeria"
+    "footer"
+}
+.padre{
+    margin: 0%;
+    background-color: #EBEBEB;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+img{
+    width: 300px;
+    height: 250px;
+    border: 8px solid gray;
+    margin-top: 15px;
+}
+
+/* Tienda */
+
+.card{
+    background-color: #EBEBEB;
+    border: 1px solid #EBEBEB;
+    border-radius: 20px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.tienda{
+    width: 300px;
+    height: 200px;
+}
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media(min-width:576px){
+
+    .padre{
+        margin: 0%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header   header"
+        "nav      nav"
+        "galeria  galeria"
+        "footer   footer"
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    img{
+        width: 200px;
+        height: 150px;
+    }
+    
+    label{
+        display: flex;
+        margin-right: 50%;
+        margin-left: 1%;
+        width: 300px;
+    }
+    input{
+        border-radius: 2%;
+    }
+    textarea{
+        width: 400px;
+    }
+
+    /* Tienda */
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.box{
+    border-radius: 6px;
+    
+}
+
+
+.box:hover{
+    transform: scale(1.5);
+}
+
+.box1{
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+h1{
+    color: black;
+    margin-left: 7%;
+    margin-right: 10%;
+    font-family: 'Lato', sans-serif;
+
+}
+h4{
+    margin-left: 7%;
+    margin-right: 10%;
+    font-size: medium;
+    color: #7e8891;
+}
+h5{
+    margin-left: 7%;
+    margin-right: 10%;
+    font-size: small;
+    color: #7e8891;
+}
+
+@media(min-width:920px){
+
+    .padre{
+        margin: 0%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav    nav    nav"
+        "main   main   main"
+        "footer footer footer"
+    }
+    img{
+        width: 250px;
+        height: 200px;
+    }
+    label{
+        display: flex;
+        margin-right: 55%;
+        margin-left: 1%;
+        width: 350px;
+    }
+    input{
+        border-radius: 1.5%;
+    }
+    
+    textarea{
+        width: 500px;
+    }
+
+    /* tienda */
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        justify-items: center;
+        row-gap: 30px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+    }
+    .box{
+        border-radius: 6px;
+        
+    }
+    
+    
+    .box:hover{
+        transform: scale(1.5);
+    }
+    
+    .box1{
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    h1{
+        color: black;
+        margin-left: 0%;
+        margin-right: 62%;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    h4{
+        margin-left: 10%;
+        margin-right: 49%;
+        font-size: medium;
+        color: #7e8891;
+    }
+    h5{
+        margin-left: 10%;
+        margin-right: 49%;
+        margin-bottom: 10%;
+        font-size: small;
+        color: #7e8891;
+    }
+
+}
+
+
